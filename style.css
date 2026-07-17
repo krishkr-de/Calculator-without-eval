@@ -1,0 +1,109 @@
+:root {
+  --primary-color: #9fb1bc;
+  --secondary-color: #6e8898;
+  --accent-color: #2e5266;
+  --bg-color: #d3d0cb;
+  --text-color: #e2c044;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+main {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  padding-top: 50px;
+  align-items: center;
+  flex-direction: column;
+  background-color: var(--bg-color);
+}
+main h1 {
+  font-size: 3rem;
+  color: var(--accent-color);
+  margin-bottom: 20px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: bold;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+.calc {
+  background-color: var(--primary-color);
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  display: flex;
+  flex-direction: column;
+  height: 400px;
+  width: 300px;
+}
+.output-wrapper {
+  height: 60px;
+  width: 100%;
+  overflow-x: scroll;
+  overflow-y: hidden;
+  margin-bottom: 20px;
+  background-color: var(--secondary-color);
+  border-radius: 5px;
+  margin-bottom: 20px;
+  padding: 0 10px;
+  font-size: 1.75rem;
+}
+.output-wrapper::-webkit-scrollbar {
+    display: none;
+}
+
+.output {
+  height: 100%;
+  color: var(--text-color); 
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  user-select: none;
+}
+
+.btn {
+  height: 100%;
+  width: 95%;
+  background-color: var(--accent-color);
+  color: var(--text-color);
+  border: none;
+  border-radius: 5px;
+  padding: 15px;
+  font-size: 1.25rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: 500;
+}
+table {
+  width: 100%;
+  height: 100%;
+}
+tr {
+  height: 25%;
+  width: 100%;
+}
+td {
+  width: 25%;
+  height: 100%;
+}
+.btn:hover {
+  background-color: #696773;
+}
+.operator {
+  background-color: #ccc5b9;
+  color: var(--accent-color);
+  font-weight: 800;
+}
+#allclear {
+  background-color: #e2c044;
+  color: var(--accent-color);
+  font-weight: 800;
+}
